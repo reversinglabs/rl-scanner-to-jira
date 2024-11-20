@@ -1,0 +1,18 @@
+digraph {
+   // rankdir="LR"
+
+   node [shape="note", color="blue"]
+   report [label="report.rl.json"]
+   ticket_template [label="ticket_template.json"]
+
+   node [shape="box3d", color="orange"]
+   jira [label="jira data center"]
+
+   node [shape="rectangle", color="green"]
+   script [label="make_jira_issue.py"]
+
+   { rank = same; ticket_template -> script }
+
+   report -> script [label="3"]
+   script -> jira   [label="4"]
+}

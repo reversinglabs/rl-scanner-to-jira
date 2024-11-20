@@ -1,0 +1,12 @@
+{
+  "project": {
+    "key": null
+  },
+  "summary": null,
+  "description": null,
+  "issuetype": {
+    "name": "Task"
+  },
+  "components": [ { "name": "Default-component" } ]
+}
+
